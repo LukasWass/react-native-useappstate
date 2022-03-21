@@ -23,11 +23,17 @@ const App = () => {
     const appState = useAppState();
 
     return (
-        <View>
-            <Text>
-                {Current app state: ${appState}}
-            </Text>
-        </View>
+        <View
+			style={{
+				flex: 1,
+				justifyContent: "center",
+				alignItems: "center"
+			}}
+		>
+			<Text>
+				{`Current app state: ${appState}`}
+			</Text>
+		</View>
     );
 }
 
@@ -38,7 +44,8 @@ export default App;
 
 #### Returns
 The hook returns an react native AppStateStatus.
-["active" | "background" | "inactive" | "unknown" | "extension" | null]
+<br>
+```["active" | "background" | "inactive" | "unknown" | "extension" | null]```
 
 ```typescript
 import { AppStateStatus } from "react-native";
