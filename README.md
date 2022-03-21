@@ -2,6 +2,8 @@
 ## React Native AppState hook
 
 A hook that listens to react native AppState change event.
+<br>
+Works with expo! ✌️
 
 ## Installation
 
