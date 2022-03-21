@@ -1,0 +1,50 @@
+{
+    "name": "react-native-useappstate",
+    "version": "1.0.0",
+    "description": "React Native AppState hook",
+    "main": "./lib/index.js",
+    "types": "./lib",
+    "license": "MIT",
+    "bugs": {
+        "url": "https://github.com/LukasWass/react-native-useappstate/issues"
+    },
+    "homepage": "https://github.com/LukasWass/react-native-useappstate#readme",
+    "keywords": [],
+    "scripts": {
+        "build": "tsc",
+        "test": "jest",
+        "publish": "npm publish"
+    },
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/LukasWass/react-native-useappstate.git"
+    },
+    "authors": [
+        {
+            "name": "Lukas Wass",
+            "email": "dev@lukaswass.se",
+            "url": "https://github.com/LukasWass"
+        }
+    ],
+    "dependencies": {},
+    "devDependencies": {
+        "react": "17.0.1",
+        "@types/react": "~17.0.21",
+        "react-native": "0.64.3",
+        "@types/react-native": "~0.64.12",
+        "@types/jest": "^27.0.3",
+        "jest": "^27.4.2",
+        "ts-jest": "^27.0.7",
+        "typescript": "^4.5.2"
+    },
+    "jest": {
+        "preset": "ts-jest",
+        "testEnvironment": "node",
+        "transform": {
+            "node_modules/variables/.+\\.(j|t)sx?$": "ts-jest"
+        },
+        "transformIgnorePatterns": [
+            "node_modules/(?!variables/.*)"
+        ]
+    }
+}
