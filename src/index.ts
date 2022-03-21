@@ -15,10 +15,10 @@ const index = () => {
 	};
 
 	useEffect(() => {
-		AppState.addEventListener("change", onAppStateChange);
+		const listener = AppState.addEventListener("change", onAppStateChange);
 
 		return () => {
-			AppState.removeEventListener("change", onAppStateChange);
+			listener.remove()
 		};
 	}, []);
 
