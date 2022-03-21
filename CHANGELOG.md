@@ -8,3 +8,8 @@
 
 - Fixed readme example not working by adding string quotations `` to Text component.
 - Added View center styling in readme example.
+
+## Version 1.0.2 (2022-03-21)
+
+- Replaced tabs with spaces in readme example.
+- Added keywords to package.json
