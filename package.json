@@ -9,7 +9,16 @@
         "url": "https://github.com/LukasWass/react-native-useappstate/issues"
     },
     "homepage": "https://github.com/LukasWass/react-native-useappstate#readme",
-    "keywords": [],
+    "keywords": [
+        "react-native",
+        "appstate",
+        "react",
+        "native",
+        "app",
+        "state",
+        "change",
+        "hook"
+    ],
     "scripts": {
         "build": "tsc",
         "test": "jest",
