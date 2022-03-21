@@ -18,7 +18,20 @@ const index = () => {
 		const listener = AppState.addEventListener("change", onAppStateChange);
 
 		return () => {
-			listener.remove()
+			try {
+				// @ts-ignore
+				if (listener instanceof Object) {    //Use new way of removing event listener
+					// @ts-ignore
+					listener?.remove();
+				}
+				else {    //Use deprecated way of removing event listener
+					// @ts-ignore
+					AppState?.removeEventListener("change", onAppStateChange);
+				}
+			}
+			catch {
+				console.warn("react-native-useappstate problem with removing listener");
+			}
 		};
 	}, []);
 
