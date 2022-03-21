@@ -18,3 +18,8 @@
 
 - Added support for both the new way of removing AppState listener and the deprecated way. Expo still uses the deprecated way.
 - Added Albin Axtelius as a contributor.
+
+## Version 1.0.4 (2022-03-22)
+
+- Added works with expo text in readme.
+- Added build before publish in publish script.
