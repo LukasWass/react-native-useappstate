@@ -22,7 +22,7 @@
     "scripts": {
         "build": "tsc",
         "test": "jest",
-        "publish": "npm publish"
+        "publish": "npm run build && npm publish"
     },
     "repository": {
         "type": "git",
