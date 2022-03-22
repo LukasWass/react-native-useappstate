@@ -14,7 +14,7 @@ npm install react-native-useappstate
 ## Usage
 
 ```typescript
-import react from "react";
+import React from "react";
 import {
     View,
     Text
